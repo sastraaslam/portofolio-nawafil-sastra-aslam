@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nawafil Sastra Aslam | Portfolio & Projects</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              mono: ["JetBrains Mono", "monospace"],
+            },
+            colors: {
+              brand: {
+                black: "#0a0a0a",
+                dark: "#121212",
+                gray: "#262626",
+                muted: "#737373",
+                light: "#e5e5e5",
+                white: "#ffffff",
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-brand-black text-brand-light font-sans antialiased selection:bg-brand-white selection:text-brand-black"
+  >
+    <!-- Header / Navbar -->
+    <header
+      class="fixed top-0 left-0 w-full z-50 bg-brand-black/80 backdrop-blur-md border-b border-brand-gray"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <a
+          href="#home"
+          class="font-extrabold text-lg text-brand-white tracking-tight flex items-center gap-2"
+        >
+          <span class="w-3 h-3 bg-white rounded-full"></span>
+          NAWAFIL<span class="text-brand-muted">.DEV</span>
+        </a>
+        <nav
+          class="hidden md:flex items-center space-x-8 text-sm font-medium text-brand-muted"
+        >
+          <a href="#about" class="hover:text-brand-white transition">Tentang</a>
+          <a href="#skills" class="hover:text-brand-white transition"
+            >Keahlian</a
+          >
+          <a href="#projects" class="hover:text-brand-white transition"
+            >Proyek & Usaha</a
+          >
+          <a href="#contact" class="hover:text-brand-white transition"
+            >Kontak</a
+          >
+        </nav>
+        <a
+          href="mailto:csdemarino@gmail.com"
+          class="hidden sm:inline-flex px-4 py-2 text-xs font-mono font-bold uppercase bg-brand-white text-brand-black rounded-full hover:bg-brand-light transition"
+        >
+          Hubungi Saya
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="pt-36 pb-20 md:pt-48 md:pb-32 border-b border-brand-gray"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
+      >
+        <div class="lg:col-span-8 space-y-6">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-muted/30 bg-brand-dark text-xs font-mono text-brand-light"
+          >
+            <span
+              class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"
+            ></span>
+            Mahasiswa S1 Sistem Informasi • Telkom University
+          </div>
+          <h1
+            class="text-4xl sm:text-6xl lg:text-7xl font-black text-brand-white tracking-tight leading-none"
+          >
+            HI, I'M
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-brand-white via-brand-light to-brand-muted"
+              >NAWAFIL.</span
+            >
+          </h1>
+          <p
+            class="text-lg md:text-xl text-brand-muted max-w-2xl leading-relaxed"
+          >
+            Fokus pada
+            <strong class="text-brand-white">Front-End Development</strong> dan
+            <strong class="text-brand-white">Data Entry Operations</strong>.
+            Membangun website interaktif nyata untuk usaha sablon mandiri serta
+            mengelola pencatatan operasional bisnis.
+          </p>
+          <div class="pt-4 flex flex-wrap gap-4">
+            <a
+              href="#projects"
+              class="px-6 py-3.5 text-sm font-bold text-brand-black bg-brand-white rounded-lg hover:bg-brand-light transition shadow-lg"
+            >
+              Lihat Proyek Website &rarr;
+            </a>
+            <a
+              href="https://www.linkedin.com/in/nawafil-sastra-aslam-012ab2373"
+              target="_blank"
+              class="px-6 py-3.5 text-sm font-bold text-brand-white bg-brand-dark border border-brand-gray rounded-lg hover:bg-brand-gray transition"
+            >
+              Profil LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 border-b border-brand-gray bg-brand-dark">
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
+      >
+        <div class="lg:col-span-5 space-y-4">
+          <span
+            class="text-xs font-mono text-brand-muted uppercase tracking-widest"
+            >Tentang Saya</span
+          >
+          <h2 class="text-3xl font-extrabold text-brand-white">
+            Menghubungkan Teknologi & Bisnis
+          </h2>
+          <p class="text-brand-muted leading-relaxed">
+            Saat ini saya menempuh semester 3 S1 Sistem Informasi di Telkom
+            University Bandung. Saya terbiasa mengelola ketelitian data,
+            pencatatan operasional bisnis menggunakan Microsoft Excel, serta
+            merancang antarmuka web yang bersih dan fungsional.
+          </p>
+        </div>
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div
+            class="p-6 bg-brand-black border border-brand-gray rounded-2xl space-y-2"
+          >
+            <i data-lucide="code" class="w-8 h-8 text-brand-white mb-2"></i>
+            <h3 class="font-bold text-brand-white">Front-End Focus</h3>
+            <p class="text-sm text-brand-muted">
+              Membangun tampilan web fungsional dan landing page interaktif
+              dengan HTML, CSS, & JavaScript.
+            </p>
+          </div>
+          <div
+            class="p-6 bg-brand-black border border-brand-gray rounded-2xl space-y-2"
+          >
+            <i data-lucide="database" class="w-8 h-8 text-brand-white mb-2"></i>
+            <h3 class="font-bold text-brand-white">Data Operations</h3>
+            <p class="text-sm text-brand-muted">
+              Pengolahan data pesanan yang akurat, pembukuan, dan manajemen
+              rekapitulasi bisnis dengan Excel.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 border-b border-brand-gray">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+          <span
+            class="text-xs font-mono text-brand-muted uppercase tracking-widest"
+            >Kompetensi</span
+          >
+          <h2 class="text-3xl font-extrabold text-brand-white">
+            Keahlian & Teknologi
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="p-8 bg-brand-dark border border-brand-gray rounded-2xl space-y-4"
+          >
+            <h3
+              class="font-bold text-brand-white font-mono text-sm tracking-wider uppercase"
+            >
+              Frontend Dev
+            </h3>
+            <ul class="space-y-2 text-sm text-brand-muted font-mono">
+              <li>• HTML5 / semantic markup</li>
+              <li>• CSS3 / Responsive Layout</li>
+              <li>• JavaScript (DOM & Toggle)</li>
+            </ul>
+          </div>
+          <div
+            class="p-8 bg-brand-dark border border-brand-gray rounded-2xl space-y-4"
+          >
+            <h3
+              class="font-bold text-brand-white font-mono text-sm tracking-wider uppercase"
+            >
+              Data & Productivity
+            </h3>
+            <ul class="space-y-2 text-sm text-brand-muted font-mono">
+              <li>• Microsoft Excel (Data Entry)</li>
+              <li>• Microsoft Word & PowerPoint</li>
+              <li>• Financial & Order Ledgers</li>
+            </ul>
+          </div>
+          <div
+            class="p-8 bg-brand-dark border border-brand-gray rounded-2xl space-y-4"
+          >
+            <h3
+              class="font-bold text-brand-white font-mono text-sm tracking-wider uppercase"
+            >
+              Design & Tools
+            </h3>
+            <ul class="space-y-2 text-sm text-brand-muted font-mono">
+              <li>• CorelDRAW</li>
+              <li>• Canva</li>
+              <li>• Web Deployment</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects / Ventures Section -->
+    <div
+      id="projects"
+      class="py-24 border-b border-brand-gray bg-brand-dark/50"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+          <span
+            class="text-xs font-mono text-brand-muted uppercase tracking-widest"
+            >Portofolio & Produk Nyata</span
+          >
+          <h2 class="text-3xl font-extrabold text-brand-white">
+            Proyek Website & Usaha Sablon
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Featured Web Project Card: CSDEMARINO -->
+          <div
+            class="p-8 bg-brand-black border border-brand-white/40 rounded-2xl space-y-4 shadow-xl"
+          >
+            <span
+              class="text-xs font-mono px-3 py-1 bg-brand-white text-brand-black font-bold rounded"
+              >Featured Web Project</span
+            >
+            <h3 class="text-2xl font-bold text-brand-white">
+              CSDEMARINO Sablon Website
+            </h3>
+            <p class="text-sm text-brand-muted leading-relaxed">
+              Website resmi untuk usaha sablon kaos CSDEMARINO yang dikembangkan
+              sendiri, serta antarmuka yang bersih dan interaktif.
+            </p>
+            <div class="pt-2">
+              <a
+                href="https://casademarino.page.gd/csdemarino/csdemarino.html"
+                target="_blank"
+                class="inline-flex items-center gap-2 text-xs font-mono font-bold text-brand-white hover:underline"
+              >
+                Kunjungi Website Live &rarr;
+              </a>
+            </div>
+          </div>
+
+          <!-- Organization & Venture -->
+          <div
+            class="p-8 bg-brand-black border border-brand-gray rounded-2xl space-y-4"
+          >
+            <span
+              class="text-xs font-mono px-3 py-1 bg-brand-gray text-brand-light rounded"
+              >Organisasi & Operasional</span
+            >
+            <h3 class="text-2xl font-bold text-brand-white">
+              Along Polong (Divisi PDD)
+            </h3>
+            <p class="text-sm text-brand-muted leading-relaxed">
+              Aktif sebagai Staf Publikasi, Dekorasi, dan Dokumentasi (PDD).
+              Mengelola kebutuhan visual branding organisasi, dokumentasi
+              kegiatan, serta menyusun arsip materi publikasi acara secara
+              terstruktur.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      id="contact"
+      class="py-12 bg-brand-black text-brand-muted text-xs font-mono"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6"
+      >
+        <div>
+          <span class="text-brand-white font-bold">NAWAFIL SASTRA ASLAM</span> —
+          Bangkalan, Jawa Timur
+        </div>
+        <div class="flex space-x-6">
+          <a
+            href="https://www.linkedin.com/in/nawafil-sastra-aslam-012ab2373"
+            target="_blank"
+            class="hover:text-brand-white transition"
+            >LinkedIn</a
+          >
+          <a
+            href="https://casademarino.page.gd/csdemarino/csdemarino.html"
+            target="_blank"
+            class="hover:text-brand-white transition"
+            >Website CSDEMARINO</a
+          >
+          <a
+            href="mailto:csdemarino@gmail.com"
+            class="hover:text-brand-white transition"
+            >Email</a
+          >
+        </div>
+        <div>&copy; 2026 Nawafil Sastra Aslam. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <!-- Script Init -->
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
